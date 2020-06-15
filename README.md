@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Potential future updates: 
+  -implement Sign-In and Register with back-end and database
+  -implement ranking system based on who uploads the most photos
+
 ## Available Scripts
 
 In the project directory, you can run:
