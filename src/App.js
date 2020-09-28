@@ -1,19 +1,14 @@
 import React, {Component} from 'react';
 import './App.css';
-// import Navigation from './Components/Navigation/Navigation'
 import Logo from './Components/Logo/Logo'
 import ImageLinkForm from './Components/ImageLinkForm/ImageLinkForm'
-// import Rank from './Components/Rank/Rank'
 import Particles from 'react-particles-js';
 import Clarifai from 'clarifai';
 import FaceRecognition from './Components/FaceRecognition/FaceRecognition'
-// import Signin from "./Components/Signin/Signin"
-// import Register from "./Components/Register/Register"
 
 const app = new Clarifai.App({
   apiKey:'90f599b5943941f99ab2d3877b873695'
 });
-
 
 const particlesOptions = {
     particles: {
@@ -27,27 +22,15 @@ const particlesOptions = {
     }
 }
 
-
 class App extends Component {
   constructor() {
     super();
     this.state = {
       input: '',
-      imageUrl: '',
+      imageUrl: './example.jpg',
       box: {},
     }
   }
-
-  // loadUser = data => {
-  //   this.setState({user: {
-  //     id: data.id,
-  //     name: data.name,
-  //     email: data.email,
-  //     password: data.password,
-  //     entries: data.entries,
-  //     joined: data.joined
-  //   }})
-  // }
 
   calculateFaceLocation = data => {
     const clarifaiFace = data.outputs[0].data.regions[0].region_info.bounding_box;
@@ -90,7 +73,7 @@ class App extends Component {
          <Particles className='particles'
           params={particlesOptions}
         />
-        <div>
+        <div className="container">
             <br/>
             <Logo />
             <ImageLinkForm
@@ -102,7 +85,6 @@ class App extends Component {
               imageUrl={imageUrl} 
             />
         </div>
-        }
       </div>
     );
   }
