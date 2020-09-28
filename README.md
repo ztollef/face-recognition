@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Live site: https://ztollef.github.io/face-recognition/
+
 Potential future updates: 
   -implement Sign-In and Register with back-end and database
   -implement ranking system based on who uploads the most photos
