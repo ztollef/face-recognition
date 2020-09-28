@@ -2,7 +2,7 @@
   "name": "image-recognition-smart-brain",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ztollef.github.io/face-recognition/",
+  "homepage": "https://ztollef.github.io/face-recognition/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
