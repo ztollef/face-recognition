@@ -2,6 +2,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Live site: https://ztollef.github.io/face-recognition/
 
+Based on coursework from Zero to Mastery class by Andrei Neagoie
+
+
 Potential future updates: 
   -implement Sign-In and Register with back-end and database
   -implement ranking system based on who uploads the most photos
